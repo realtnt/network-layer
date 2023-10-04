@@ -15,6 +15,7 @@
 		E4629A952ACB7F8600DACBB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4629A942ACB7F8600DACBB1 /* ContentView.swift */; };
 		E4629A972ACB7F8700DACBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4629A962ACB7F8700DACBB1 /* Assets.xcassets */; };
 		E4629A9A2ACB7F8700DACBB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4629A992ACB7F8700DACBB1 /* Preview Assets.xcassets */; };
+		E4629A9F2ACCE7CA00DACBB1 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4629A9E2ACCE7CA00DACBB1 /* EndPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E4629A942ACB7F8600DACBB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4629A962ACB7F8700DACBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4629A992ACB7F8700DACBB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4629A9E2ACCE7CA00DACBB1 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				E4629A752ACB7F3E00DACBB1 /* NetworkLayer.h */,
 				E4629A762ACB7F3E00DACBB1 /* NetworkLayer.docc */,
+				E4629A9E2ACCE7CA00DACBB1 /* EndPoints.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4629A9F2ACCE7CA00DACBB1 /* EndPoints.swift in Sources */,
 				E4629A772ACB7F3E00DACBB1 /* NetworkLayer.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +493,7 @@
 		E4629A8A2ACB7F3E00DACBB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -508,6 +513,7 @@
 		E4629A8B2ACB7F3E00DACBB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
