@@ -16,13 +16,11 @@
 		E4629A972ACB7F8700DACBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4629A962ACB7F8700DACBB1 /* Assets.xcassets */; };
 		E4629A9A2ACB7F8700DACBB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4629A992ACB7F8700DACBB1 /* Preview Assets.xcassets */; };
 		E4CB5EF42ACE18E200480866 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EF32ACE18E200480866 /* Endpoint.swift */; };
-		E4CB5EF62ACE192300480866 /* Endpoint+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EF52ACE192300480866 /* Endpoint+URL.swift */; };
-		E4CB5EF82ACE19EF00480866 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EF72ACE19EF00480866 /* Endpoints.swift */; };
 		E4CB5EFA2ACE1DEE00480866 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EF92ACE1DEE00480866 /* NetworkController.swift */; };
 		E4CB5EFD2ACE203000480866 /* LogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EFB2ACE1FB500480866 /* LogicController.swift */; };
 		E4CB5EFF2ACE205000480866 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EFE2ACE205000480866 /* Users.swift */; };
 		E4CB5F012ACE212500480866 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5F002ACE212500480866 /* CustomStringConvertible.swift */; };
-		E4CB5F032ACE215300480866 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5F022ACE215300480866 /* Demo.swift */; };
+		E4CB5F032ACE215300480866 /* NetworkDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5F022ACE215300480866 /* NetworkDemoViewModel.swift */; };
 		E4CB5F042ACE21D000480866 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EF32ACE18E200480866 /* Endpoint.swift */; };
 		E4CB5F052ACE21D500480866 /* Endpoint+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EF52ACE192300480866 /* Endpoint+URL.swift */; };
 		E4CB5F062ACE21D800480866 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CB5EF72ACE19EF00480866 /* Endpoints.swift */; };
@@ -57,7 +55,7 @@
 		E4CB5EFB2ACE1FB500480866 /* LogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicController.swift; sourceTree = "<group>"; };
 		E4CB5EFE2ACE205000480866 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E4CB5F002ACE212500480866 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
-		E4CB5F022ACE215300480866 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		E4CB5F022ACE215300480866 /* NetworkDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDemoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +110,6 @@
 				E4629A752ACB7F3E00DACBB1 /* NetworkLayer.h */,
 				E4629A762ACB7F3E00DACBB1 /* NetworkLayer.docc */,
 				E4CB5EF32ACE18E200480866 /* Endpoint.swift */,
-				E4CB5EF52ACE192300480866 /* Endpoint+URL.swift */,
-				E4CB5EF72ACE19EF00480866 /* Endpoints.swift */,
 				E4CB5EF92ACE1DEE00480866 /* NetworkController.swift */,
 			);
 			path = NetworkLayer;
@@ -130,6 +126,8 @@
 		E4629A912ACB7F8600DACBB1 /* NetworkLayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4CB5EF52ACE192300480866 /* Endpoint+URL.swift */,
+				E4CB5EF72ACE19EF00480866 /* Endpoints.swift */,
 				E4CB5EFB2ACE1FB500480866 /* LogicController.swift */,
 				E4629A922ACB7F8600DACBB1 /* NetworkLayerDemoApp.swift */,
 				E4629A942ACB7F8600DACBB1 /* ContentView.swift */,
@@ -137,7 +135,7 @@
 				E4629A982ACB7F8700DACBB1 /* Preview Content */,
 				E4CB5EFE2ACE205000480866 /* Users.swift */,
 				E4CB5F002ACE212500480866 /* CustomStringConvertible.swift */,
-				E4CB5F022ACE215300480866 /* Demo.swift */,
+				E4CB5F022ACE215300480866 /* NetworkDemoViewModel.swift */,
 			);
 			path = NetworkLayerDemo;
 			sourceTree = "<group>";
@@ -291,8 +289,6 @@
 			files = (
 				E4CB5EFA2ACE1DEE00480866 /* NetworkController.swift in Sources */,
 				E4CB5EF42ACE18E200480866 /* Endpoint.swift in Sources */,
-				E4CB5EF62ACE192300480866 /* Endpoint+URL.swift in Sources */,
-				E4CB5EF82ACE19EF00480866 /* Endpoints.swift in Sources */,
 				E4629A772ACB7F3E00DACBB1 /* NetworkLayer.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +309,7 @@
 				E4CB5F042ACE21D000480866 /* Endpoint.swift in Sources */,
 				E4CB5EFF2ACE205000480866 /* Users.swift in Sources */,
 				E4629A952ACB7F8600DACBB1 /* ContentView.swift in Sources */,
-				E4CB5F032ACE215300480866 /* Demo.swift in Sources */,
+				E4CB5F032ACE215300480866 /* NetworkDemoViewModel.swift in Sources */,
 				E4CB5F052ACE21D500480866 /* Endpoint+URL.swift in Sources */,
 				E4CB5F012ACE212500480866 /* CustomStringConvertible.swift in Sources */,
 				E4CB5EFD2ACE203000480866 /* LogicController.swift in Sources */,

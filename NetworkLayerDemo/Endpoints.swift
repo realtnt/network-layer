@@ -13,11 +13,8 @@ extension Endpoint {
     }
     
     static func users(count: Int) -> Self {
-        return Endpoint(path: "/user",
-                        queryItems: [ URLQueryItem(name: "limit",
-                                                   value: "\(count)")
-                        ]
-        )
+        let queryItems = [ URLQueryItem(name: "limit", value: "\(count)") ]
+        return Endpoint( path: "/user", queryItems: queryItems )
     }
     
     static func user(id: String) -> Self {

@@ -23,8 +23,6 @@ extension Endpoint {
     }
     
     var headers: [String: Any] {
-        return [
-            "app-id": "APP-ID"
-        ]
+        return [ "app-id": "APP-ID" ]
     }
 }
