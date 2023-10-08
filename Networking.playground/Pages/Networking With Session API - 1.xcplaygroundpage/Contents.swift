@@ -3,7 +3,7 @@
 import Foundation
 
 let baseURL = "https://dummyapi.io/data/v1/"
-let appID = "652145c7f46042274d558790"
+let appID = ""
 
 func loadUser(withID id: String, using session: URLSession = .shared) {
     let url = URL(string: baseURL + "user/\(id)")!
